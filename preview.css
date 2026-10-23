@@ -1,0 +1,105 @@
+body{
+    margin:0;
+    padding:0;
+    background:salmon;
+    font-family:Arial, Helvetica, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+img{
+    width:80px;
+    margin-bottom:20px;
+}
+
+.clock{
+    width:350px;
+    height:350px;
+    background:#d3d3d3;
+    border:6px solid #666;
+    border-radius:50%;
+    position:relative;
+    box-shadow:0 0 15px rgba(0,0,0,.5);
+}
+
+.twelve,
+.three,
+.six,
+.nine{
+    position:absolute;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.twelve{
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.three{
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.six{
+    bottom:15px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.nine{
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.center{
+    width:15px;
+    height:15px;
+    background:black;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.hour{
+    position:absolute;
+    width:8px;
+    height:80px;
+    background:black;
+    top:90px;
+    left:50%;
+    transform:translateX(-50%);
+    transform-origin:bottom;
+    border-radius:10px;
+}
+
+.minute{
+    position:absolute;
+    width:5px;
+    height:110px;
+    background:#444;
+    top:60px;
+    left:50%;
+    transform:translateX(-50%);
+    transform-origin:bottom;
+    border-radius:10px;
+}
+
+.second{
+    position:absolute;
+    width:2px;
+    height:130px;
+    background:red;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    transform-origin:bottom;
+}
